@@ -697,22 +697,22 @@ read_user_info(){
 
 # 更新自己
 update_scripts(){
-    wget -O Pi.sh ${proxy}https://raw.githubusercontent.com/zhengxinyu13/OrangePiZero2Shell/main/OPi.sh && chmod +x Pi.sh
+    wget -O OPiZ2.sh https://ghproxy.com/https://raw.githubusercontent.com/zhengxinyu13/OPizero2_One-click_script/main/OPiZ2.sh && chmod +x OPiZ2.sh
 	echo "脚本已更新并保存在当前目录 Pi.sh,现在将执行新脚本。"
-	./Pi.sh ${proxy}
+	sudo ./OPiZ2.sh ${proxy}
 	exit 0
 }
 
 show_menu() {
     clear
-    greenline "————————————————————————————————————————————————————"
+    greenline "—————————————————————————————————————————————————————————"
     echo '
     ***********  一键装机专辑脚本  ***************
          OrangePi ZERO 2 (内核版本5.16专用)
             脚本作用：快速装机，一键搞定
           --- Made by Grayson with YOU ---'
-    echo -e "   https://github.com/zhengxinyu13/OrangePiZero2Shell"
-    greenline "————————————————————————————————————————————————————"
+    echo -e "https://github.com/zhengxinyu13/OPizero2_One-click_script"
+    greenline "—————————————————————————————————————————————————————————"
     echo "请选择操作："
 
     # 特殊处理的项数组
